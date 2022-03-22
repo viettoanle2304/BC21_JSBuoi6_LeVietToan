@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container p-5">
+      <h1 class="text-center">Bài tập</h1>
+      <div class="form-group mt-5">
+        <label for="">Nhập số nguyên</label>
+        <input
+          type="text"
+          class="form-control"
+          name="bt__duLieu"
+          id="bt__duLieu--elOArr"
+          aria-describedby="helpId"
+          placeholder=""
+        />
+      </div>
+
+      <div class="d-flex justify-content-between" id="btn-mainFuncs">
+        <button class="btn btn-primary">Thêm số</button>
+        <button class="btn btn-warning">Xoá số cuối cùng</button>
+        <button class="btn btn-danger">Xoá mảng</button>
+        <button class="btn btn-danger" style="display: none">Unchanged</button>
+      </div>
+
+      <div
+        class="d-flex flex-wrap justify-content-center mt-3"
+        id="btn-functions"
+        style="gap: 6px"
+      >
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#tinhTong"
+          aria-expanded="false"
+          aria-controls="contentId"
+        >
+          Tính tổng các số dương
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#demSoDuong"
+          aria-expanded="false"
+          aria-controls="contentId"
+        >
+          Đếm số dương
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#timMin"
+          aria-expanded="false"
+          aria-controls="contentId"
+        >
+          Tìm số nhỏ nhất
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#timMinDuong"
+          aria-expanded="false"
+          aria-controls="contentId"
+        >
+          Tìm số dương nhỏ nhất
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#timSoChan"
+          aria-expanded="false"
+          aria-controls="contentId"
+        >
+          Tìm số chẵn cuối cùng
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#swapVals"
+          aria-expanded="false"
+          aria-controls="contentId"
+          value="swapVals"
+        >
+          Đổi chỗ 2 giá trị
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#sort"
+          aria-expanded="false"
+          aria-controls="contentId"
+          value="sort"
+        >
+          Sắp xếp tăng dần
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#unsort"
+          aria-expanded="false"
+          aria-controls="contentId"
+          value="unsort"
+        >
+          Bỏ sắp xếp
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#timPrime"
+          aria-expanded="false"
+          aria-controls="contentId"
+        >
+          Tìm số nguyên tố đầu tiên
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#timInt"
+          aria-expanded="false"
+          aria-controls="contentId"
+        >
+          Tìm số nguyên trong mảng mới
+        </button>
+        <button
+          class="btn btn-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#soSanh"
+          aria-expanded="false"
+          aria-controls="contentId"
+        >
+          So sánh số lượng số dương và âm
+        </button>
+      </div>
+
+      <div class="mt-3" id="bt__ketQua">
+        <p>Các số trong mảng đã nhập: <span></span></p>
+        <p id="tinhTong" class="collapse"></p>
+        <p id="demSoDuong" class="collapse"></p>
+        <p id="timMin" class="collapse"></p>
+        <p id="timMinDuong" class="collapse"></p>
+        <p id="timSoChan" class="collapse"></p>
+        <div id="swapVals" class="collapse">
+          <div class="form-group">
+            <label for=""
+              >Nhập vị trí đầu tiên (Số đầu tiên mang vị trí 0)</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              name="bt__duLieu"
+              id="bt__duLieu--viTriX"
+              aria-describedby="helpId"
+              placeholder=""
+            />
+            <label for="">Nhập vị trí thứ hai</label>
+            <input
+              type="text"
+              class="form-control"
+              name="bt__duLieu"
+              id="bt__duLieu--viTriY"
+              aria-describedby="helpId"
+              placeholder=""
+            />
+            <button class="btn btn-success mt-3">Thực hiện đổi chỗ</button>
+          </div>
+          <p></p>
+        </div>
+        <p id="sort" class="collapse"></p>
+        <p id="unsort" class="collapse"></p>
+        <p id="timPrime" class="collapse"></p>
+        <div id="timInt" class="collapse">
+          <div class="form-group">
+            <label for="">Nhập mảng số thực</label>
+            <input
+              type="text"
+              class="form-control"
+              name="bt__duLieu"
+              id="bt__duLieu--mangSoThuc"
+              aria-describedby="helpId"
+              placeholder="vd: 1.2, 2.33, 3.4, 4, 5.5"
+            />
+            <button class="btn btn-success mt-3">Đếm số nguyên</button>
+          </div>
+          <p></p>
+        </div>
+        <p id="soSanh" class="collapse"></p>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/bt1.js"></script>
+    <script src="./js/bt2.js"></script>
+    <script src="./js/bt3.js"></script>
+    <script src="./js/bt4.js"></script>
+    <script src="./js/bt5.js"></script>
+    <script src="./js/bt6.js"></script>
+    <script src="./js/bt7.js"></script>
+    <script src="./js/bt8.js"></script>
+    <script src="./js/bt9.js"></script>
+    <script src="./js/bt10.js"></script>
+  </body>
+</html>
